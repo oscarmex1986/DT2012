@@ -1,0 +1,25 @@
+Possible trouble you might find.
+
+Since we are working in a multilingual environment, it is possible that your computer settings are configured to represent and interpret data differently.
+
+For example:
+
+If I say I arrived in Sweden in 09/06/2021, did I arrive in September or in June?
+If I say my luggage weights 23,300 kilos, did I come by plane or by freight ship?
+If I say the temperature back home was 5.600 degrees, was I burning or freezing?
+
+Java normally uses en_US (American English) as its Locale, and expects data to be in that format.
+
+Commas separate thousands, dots indicate the beginning of the decimal part.
+
+If you have trouble with the scanner, set the locale with the following command:
+new Scanner(System.in).useLocale(Locale.US);
+
+It requires importing Locale:
+import java.util.Locale;
+
+=============================================================================================================
+
+Fow Power Shell (PS) users:
+Remember for PS to deal with redirection of standard input:
+Get-Content input.txt | java Program > output.txt
