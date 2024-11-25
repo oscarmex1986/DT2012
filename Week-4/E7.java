@@ -47,7 +47,7 @@ public class E7{
     }
     // shuffle the numbers
     // code from the course book
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i <= n; i++) {
       int r = (int) (Math.random() * (i+1));     // int between 0 and i
       int swap = permutation[r];
       permutation[r] = permutation[i];
@@ -57,13 +57,13 @@ public class E7{
 
     // Your code here
     // print the sequence and the permutation
-    for (int i = 0; i < n ; i++) {
+    for (int i = 0; i <= n ; i++) {
       System.out.println(i + " " + permutation[i]);
     }
 
     // count how many elements are in place
     int inPlace = 0;
-    for (int i = 0; i < n ; i++) {
+    for (int i = 0; i <= n ; i++) {
       if(i == permutation[i]){
         inPlace++;
       }
